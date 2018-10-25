@@ -18,21 +18,6 @@ jQuery(document).ready(function ($) {
         autoplaySpeed: 5000,
     });
 
-    // init Isotope
-    // var $grid = $('#filter-gallery-container').isotope({
-    //   itemSelector: '.gallery-items'
-    // });
-
-
-    // bind filter button click
-    // $('#filters').on( 'click', 'button', function() {
-    //   var filterValue = $( this ).attr('data-filter');
-    //   // use filterFn if matches value
-    //   filterValue = filterValue;
-    //   $grid.isotope({ filter: filterValue });
-    // });
-
-
     // change is-checked class on buttons
     $('.button-group').each( function( i, buttonGroup ) {
       var $buttonGroup = $( buttonGroup );
