@@ -1,0 +1,88 @@
+/*------------ THUMBNAIL GALLERY CSS ----------*/
+
+#thumnbnail-gallery-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+#thumnbnail-gallery-container.clearfix::before, #thumnbnail-gallery-container.clearfix::after{
+    display: none;  
+}
+
+#thumnbnail-gallery-container .gallery-items { 
+    width: 24%; 
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#thumnbnail-gallery-container .gallery-items img { 
+    -moz-transition: all 0.3s; 
+    -webkit-transition: all 0.3s; 
+    transition: all 0.3s; 
+}
+
+#thumnbnail-gallery-container .gallery-items img:hover { 
+    -moz-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
+
+/*----------- SLIDER GALLERY CSS -----------*/
+
+.custom-gal-thumb .slick-slide {
+    margin: 10px 5px 0;
+    cursor: pointer;
+}
+
+
+/*----------- FILTER GALLERY CSS ----------*/
+
+#filter-gallery-container .gallery-items { 
+    float: left; 
+    width: 23.33%; 
+    margin: 5px;
+    overflow: hidden;
+}
+
+#filter-gallery-container .gallery-items img { 
+    -moz-transition: all 0.3s; 
+    -webkit-transition: all 0.3s; 
+    transition: all 0.3s; 
+}
+
+#filter-gallery-container .gallery-items img:hover { 
+    -moz-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
+
+#filters { margin: 15px 5px; }
+#filters .button {
+    margin-right: 5px;
+    font-size: 20px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    transition: all .1s;
+}
+#filters .button:focus { outline: 0; }
+#filters .button.is-checked, #filters .button:hover { border-bottom: 2px solid; }
+
+/*----------- RESPONSIVE CSS ----------*/
+
+@media only screen and ( min-width: 981px )  {
+
+}
+
+@media only screen and ( min-width: 768px ) and ( max-width: 980px ) { 
+    div#thumnbnail-gallery-container .gallery-items, div#filter-gallery-container .gallery-items { width: 31.7%; }
+}
+
+@media only screen and ( max-width: 767px )  {
+    div#thumnbnail-gallery-container .gallery-items, div#filter-gallery-container .gallery-items { width: 47.8%; }
+}
+
+@media only screen and ( max-width: 479px )  {
+	div#thumnbnail-gallery-container .gallery-items, div#filter-gallery-container .gallery-items { width: 46%; }
+}
