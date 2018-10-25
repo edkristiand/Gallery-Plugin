@@ -20,4 +20,4 @@
                 <img src="<?php echo $imageThumb['sizes']['medium']; ?>" alt="<?php echo $imageThumb['alt']; ?>" />
             </div>
         <?php endforeach; ?>
-    </div>
+    </div> 
