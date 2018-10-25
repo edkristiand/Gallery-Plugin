@@ -64,7 +64,6 @@ function acf_load_select_field_choices( $field ) {
             
             the_row();
             
-            $value = get_sub_field('category_slug');
             $label = get_sub_field('category_name');
 
             $field['choices'][ $label ] = $label;
