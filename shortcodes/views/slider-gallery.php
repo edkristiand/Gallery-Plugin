@@ -21,5 +21,3 @@
             </div>
         <?php endforeach; ?>
     </div>
-
-    asdasdsadasd
