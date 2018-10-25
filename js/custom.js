@@ -16,6 +16,14 @@ jQuery(document).ready(function ($) {
         focusOnSelect: !0,
         autoplay: true,
         autoplaySpeed: 5000,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+        ]
     });
 
     // change is-checked class on buttons
