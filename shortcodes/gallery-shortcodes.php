@@ -16,9 +16,7 @@ function platy_gallery( $atts ) {
             if( $row['gallery_id'] == $atts['gallery_id'] ) {
                 $gallery = $row;
                 break;
-            } else {
-                echo '<div id="shortcode-error"><p>Shortcode Invalid! Check gallery ID.</p></div>';
-            }
+            } 
         }
     }
 
@@ -53,6 +51,6 @@ function platy_gallery( $atts ) {
 
     ] ) );
 
-    return "<div id='mix-gallery' data-gallery-atts='{$vue_atts}'>loading poll...</div>";
+    return "<div id='mix-gallery' data-gallery-atts='{$vue_atts}'></div>";
 
 }
