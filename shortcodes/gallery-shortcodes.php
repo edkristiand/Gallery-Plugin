@@ -33,6 +33,7 @@ function platy_gallery( $atts ) {
             array_push( $array_gallery, array(
                 'image_url' => $gallery_image['url'],
                 'medium_image_url' => $gallery_image['sizes']['medium'],
+                'image_title' => $gallery_image['title'],
                 'image_alt' => $gallery_image['alt'],
                 'image_filter' => $gallery_filters
             ) );
