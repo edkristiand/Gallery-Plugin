@@ -13,6 +13,7 @@ include_once('includes/advanced-custom-fields-pro/acf.php');
 include_once('includes/acf-repeater/acf-repeater.php');
 include_once('shortcodes/gallery-shortcodes.php');
 include_once('custom-fields/custom-fields.php');
+include_once('alttextfetcher/fetcher.php');
 
 if(function_exists("register_options_page")) { 
 	register_options_page('Galleries'); 
