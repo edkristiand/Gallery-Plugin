@@ -3,7 +3,7 @@ Vue.component('thumbnail-gallery', {
         <div id="thumnbnail-gallery-container" class="clearfix">
             <div class="gallery-items" v-for="image in images">
                 <a :href="image.image_url" data-fancybox="images">
-                    <img :src="image.medium_image_url" :alt="image.image_title">
+                    <img :src="image.medium_image_url" :alt="image.image_alt">
                 </a>
             </div>
         </div>`,
@@ -16,14 +16,14 @@ Vue.component('slider-gallery', {
             <div class="custom-gal">
                 <div v-for="image in images">
                     <a :href="image.image_url" data-fancybox="images">
-                        <img :src="image.image_url" :alt="image.image_title" />
+                        <img :src="image.image_url" :alt="image.image_alt" />
                     </a>
                 </div>
             </div>
 
             <div class="custom-gal-thumb">
                 <div v-for="image in images">
-                    <img :src="image.medium_image_url" :alt="image.image_title" />
+                    <img :src="image.medium_image_url" :alt="image.image_alt" />
                 </div>
             </div>
         </div>`,
@@ -42,7 +42,7 @@ Vue.component('filter-gallery', {
             <div id="filter-gallery-container" class="clearfix filter-gallery-grid">
                 <div v-for="image in images" :class="'gallery-items '+ slugifyArray( image.image_filter )">
                     <a :href="image.image_url" data-fancybox="images">
-                        <img :src="image.medium_image_url" :alt="image.image_title">
+                        <img :src="image.medium_image_url" :alt="image.image_alt">
                     </a>
                 </div>
             </div>
