@@ -29,6 +29,9 @@ function frontend_scripts() {
 
 	wp_enqueue_style('main-style', plugin_dir_url( __FILE__ ) .'css/style.css');
 
+	//JQUERY
+	wp_enqueue_script('jquery-js', plugin_dir_url( __FILE__ ) .'includes/jquery/jquery.min.js', array(), true, false);
+
 	//FANCY BOX
 	wp_enqueue_style('fancybox-css', plugin_dir_url( __FILE__ ) .'includes/fancybox/jquery.fancybox.min.css');
 	wp_enqueue_script('fancybox-js', plugin_dir_url( __FILE__ ) .'includes/fancybox/jquery.fancybox.min.js', array(), false, true);
